@@ -1,0 +1,54 @@
+Biểu đồ với Matplotlib
+        a. Line Plot :
+            import matplotlib.pyplot as plt
+            x = [1, 2, 3, 4]
+            y = [10, 20, 25, 40]
+
+            plt.plot(x, y)
+            plt.title('Line Plot')
+            plt.show()
+
+        b. Bar Plot
+            plt.bar(['A', 'B', 'C'], [10, 20, 15])
+            plt.title('Bar Plot')
+            plt.show()
+
+        c. Scatter Plot
+            plt.scatter([1, 2, 3, 4], [10, 20, 15, 25])
+            plt.title('Scatter Plot')
+            plt.show()
+
+        d. Histogram
+            data = [1, 1, 2, 3, 5, 8, 13, 21]
+            plt.hist(data, bins=5)
+            plt.title('Histogram')
+            plt.show()
+
+        e. Pie Chart
+            sizes = [15, 30, 45, 10]
+            labels = ['A', 'B', 'C', 'D']
+            plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+            plt.title('Pie Chart')
+            plt.show()
+
+        f. Box Plot
+            data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            plt.boxplot(data)
+            plt.title('Box Plot')
+            plt.show()
+
+Biểu đồ với Seaborn
+    a. Line Plot
+        sns.lineplot(x=x, y=y)
+
+    b. Bar Plot: sns.barplot
+
+    c. Scatter Plot:    sns.scatterplot
+
+    d. Histogram :      sns.histplot
+
+    e. Box Plot:    sns.boxplot
+
+    g. Heatmap
+
+    h. Pair Plot
